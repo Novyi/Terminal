@@ -15,21 +15,21 @@ history-size (unset) -   Set the maximum number of history entries saved in the 
 Any  element of an array may be referenced using ${name[subscript]}.  The braces are required to avoid conflicts with pathname expansion.  
 
 
-С учётом ответа на предыдущий вопрос, как создать однократным вызовом touch 100000 файлов? Получится ли аналогичным образом создать 300000? Если нет, то почему?
- НЕ ПОНЯЛ
+5. С учётом ответа на предыдущий вопрос, как создать однократным вызовом touch 100000 файлов? Получится ли аналогичным образом создать 300000? Если нет, то почему?
+ НЕ РАЗОБРАЛСЯ.
  
-Что делает конструкция [[ -d /tmp ]]
+6. Что делает конструкция [[ -d /tmp ]]
 Проверяет существование директории:
 [[ expression ]]
               Return  a status of 0 or 1 depending on the evaluation of the conditional expression expression.  
 
-Основываясь на знаниях о просмотре текущих (например, PATH) и установке новых переменных; командах, которые мы рассматривали, добейтесь в выводе type -a bash в виртуальной машине наличия первым пунктом в списке:
+7. Основываясь на знаниях о просмотре текущих (например, PATH) и установке новых переменных; командах, которые мы рассматривали, добейтесь в выводе type -a bash в виртуальной машине наличия первым пунктом в списке:
 bash is /tmp/new_path_directory/bash
 bash is /usr/local/bin/bash
 bash is /bin/bash
 НЕ РАЗОБРАЛСЯ
 
-Чем отличается планирование команд с помощью batch и at?
+8. Чем отличается планирование команд с помощью batch и at?
 at and batch read commands from standard input or a specified file which are to be executed at a later time, using /bin/sh.
 at      executes commands at a specified time. Запускает команды в определенное время.
 batch   executes commands when system load levels permit; in other words, when the load average drops below 1.5, or the value specified in the invocation of atd. Запускает команды когда позволяет уровень загруженности системы.
