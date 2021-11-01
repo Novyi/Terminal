@@ -16,7 +16,7 @@ Any  element of an array may be referenced using ${name[subscript]}.  The braces
 
 
 5. С учётом ответа на предыдущий вопрос, как создать однократным вызовом touch 100000 файлов? Получится ли аналогичным образом создать 300000? Если нет, то почему?
- НЕ РАЗОБРАЛСЯ.
+ НЕ РАЗОБРАЛСЯ. ВВОДИЛ КОМАНДУ touch {1...10000}, touch {[10000]}, touch {1...10000]} - не создает столько файлов.
  
 6. Что делает конструкция [[ -d /tmp ]]
 Проверяет существование директории:
@@ -27,7 +27,14 @@ Any  element of an array may be referenced using ${name[subscript]}.  The braces
 bash is /tmp/new_path_directory/bash
 bash is /usr/local/bin/bash
 bash is /bin/bash
-НЕ РАЗОБРАЛСЯ
+НЕ РАЗОБРАЛСЯ: сделал команды: 
+vagrant@vagrant:~$ mkdir /tmp/new_bash
+vagrant@vagrant:~$ cp /bin/bash /tmp/new_bash/
+vagrant@vagrant:~$ PATH=$PATH:/tmp/new_bash/
+ПОЛУЧИЛОСЬ  ТАК: vagrant@vagrant:~$ type -a bash
+bash is /usr/bin/bash
+bash is /bin/bash
+bash is /tmp/new_bash/bash
 
 8. Чем отличается планирование команд с помощью batch и at?
 at and batch read commands from standard input or a specified file which are to be executed at a later time, using /bin/sh.
