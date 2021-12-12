@@ -9,7 +9,9 @@
 3 Задание.
 
 ОТВЕТ: 
+
 vagrant@vagrant:~$ sudo fdisk -l
+
 Disk /dev/sda: 64 GiB, 68719476736 bytes, 134217728 sectors
 Disk model: VBOX HARDDISK
 Units: sectors of 1 * 512 = 512 bytes
@@ -48,8 +50,11 @@ Disk /dev/mapper/vgvagrant-swap_1: 980 MiB, 1027604480 bytes, 2007040 sectors
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
+
 vagrant@vagrant:~$
+
 vagrant@vagrant:~$ lsblk
+
 NAME                 MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda                    8:0    0   64G  0 disk
 ├─sda1                 8:1    0  512M  0 part /boot/efi
