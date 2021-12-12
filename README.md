@@ -1,10 +1,15 @@
-ЗАДАНИЕ 1.	Как именно в службу будут передаваться дополнительные опции. Речь идёт не о переменных окружения, а об опциях (параметрах) запуска службы.
-ОТВЕТ: Скрин моего файла:
-![image](https://user-images.githubusercontent.com/91490218/145086502-a60a8bf0-fb6f-4874-9b9f-1941460fd2ef.png)
-
 ЗАДАНИЕ 6. 
-ОТВЕТ:  пробую без screen. Набираю sudo –i, unshare -f --pid --mount-proc sleep 1h. После этого также все засыпает и ps не работает.
-![image](https://user-images.githubusercontent.com/91490218/145086713-0e90c739-ee77-4252-b4fb-9017ed1a31e0.png)
+ОТВЕТ:  
+![image](https://user-images.githubusercontent.com/91490218/145704318-eef82012-4946-4c02-8458-e4497bfb8eee.png)
+![image](https://user-images.githubusercontent.com/91490218/145704324-201f45b7-ae61-4736-9769-e17a6ba68c8c.png)
+![image](https://user-images.githubusercontent.com/91490218/145704327-2dce36a1-f8b3-4dad-ac4b-dddb8bd7ed7a.png)
+под PID 1 процесс не вышел
+
+
+И еще раз попробовал все-таки используя screen, как показано в лекции. Тут получилось показать, что процесс работает под PID 1 через nsenter
+![image](https://user-images.githubusercontent.com/91490218/145704380-c8504f18-0c2e-4318-86ba-db175ae29ff6.png)
+![image](https://user-images.githubusercontent.com/91490218/145704383-151554e0-7bbc-4bfb-bb75-acfcab5b0159.png)
+
 
 
 
